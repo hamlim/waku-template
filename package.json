@@ -1,0 +1,42 @@
+{
+  "name": "waku-template",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build-cf-types": "wrangler types --experimental-include-runtime",
+    "dev": "waku dev",
+    "build": "waku build --with-cloudflare",
+    "predeploy": "bun run build",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "hono": "4.7.7",
+    "react": "experimental",
+    "react-dom": "experimental",
+    "react-server-dom-webpack": "experimental",
+    "waku": "0.22.2",
+    "wrangler": "4.11.1"
+  },
+  "imports": {
+    "#utils/*": "./src/utils/*"
+  },
+  "devDependencies": {
+    "@mdx-js/mdx": "3.1.0",
+    "@mdx-js/rollup": "3.1.0",
+    "@shikijs/rehype": "3.2.2",
+    "@tailwindcss/typography": "0.5.16",
+    "@tailwindcss/vite": "4.1.4",
+    "@types/node": "22.13.0",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "miniflare": "4.20250410.1",
+    "rehype-mdx-code-props": "3.0.1",
+    "remark-flexible-markers": "1.2.1",
+    "remark-frontmatter": "5.0.0",
+    "remark-gfm": "4.0.1",
+    "remark-mdx-frontmatter": "5.0.0",
+    "tailwindcss": "4.1.4",
+    "typescript": "5.8.3"
+  }
+}
