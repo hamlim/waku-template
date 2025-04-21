@@ -26,21 +26,20 @@
       "style": {
         "useConst": "off",
         "noUnusedTemplateLiteral": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
       }
     }
   },
   "overrides": [
     {
-      "include": ["./packages/**"],
+      "include": ["./worker-configuration.d.ts", "./src/pages.gen.ts"],
       "linter": {
-        "enabled": true,
-        "rules": {
-          "recommended": true,
-          "style": {
-            "useConst": "off",
-            "noUnusedTemplateLiteral": "off"
-          }
-        }
+        "enabled": false
+      },
+      "organizeImports": {
+        "enabled": false
       }
     }
   ]

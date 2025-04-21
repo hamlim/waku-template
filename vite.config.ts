@@ -9,33 +9,33 @@ import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-	resolve: {
-		alias: {
-			"#utils/*": "./src/utils/*",
-		},
-	},
-	plugins: [
-		mdx({
-			remarkPlugins: [
-				remarkFrontmatter,
-				[remarkMdxFrontmatter, { name: "frontmatter" }],
-				remarkGfm,
-				remarkFlexibleMarkers,
-			],
-			rehypePlugins: [
-				rehypeMdxCodeProps,
-				[
-					rehypeShiki,
-					{
-						themes: {
-							light: "vitesse-light",
-							dark: "vitesse-dark",
-						},
-					},
-				],
-			],
-			providerImportSource: "#utils/mdx-components",
-		}),
-		tailwindcss(),
-	],
+  resolve: {
+    alias: {
+      "#utils/*": "./src/utils/*",
+    },
+  },
+  plugins: [
+    mdx({
+      remarkPlugins: [
+        remarkFrontmatter,
+        [remarkMdxFrontmatter, { name: "frontmatter" }],
+        remarkGfm,
+        remarkFlexibleMarkers,
+      ],
+      rehypePlugins: [
+        rehypeMdxCodeProps,
+        [
+          rehypeShiki,
+          {
+            themes: {
+              light: "vitesse-light",
+              dark: "vitesse-dark",
+            },
+          },
+        ],
+      ],
+      providerImportSource: "#utils/mdx-components",
+    }),
+    tailwindcss(),
+  ],
 });
