@@ -2,7 +2,7 @@ import type { Hono } from "hono";
 
 export default function honoEnhancer(createApp: (app: Hono) => Hono) {
   if (import.meta.env && !import.meta.env.PROD) {
-    let handlerPromise = import("./waku.cloudflare-dev-server").then(
+    let handlerPromise = import("./cloudflare-dev-server").then(
       ({ cloudflareDevServer }) =>
         cloudflareDevServer({
           // Optional config settings for the Cloudflare dev server (wrangler proxy)
