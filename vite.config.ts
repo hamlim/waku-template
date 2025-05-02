@@ -7,12 +7,11 @@ import remarkFrontmatter from "remark-frontmatter";
 import remarkGfm from "remark-gfm";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import { defineConfig } from "vite";
+import packageJson from "./package.json";
 
 export default defineConfig({
   resolve: {
-    alias: {
-      "#utils/*": "./src/utils/*",
-    },
+    alias: packageJson.imports,
   },
   plugins: [
     mdx({
@@ -34,7 +33,7 @@ export default defineConfig({
           },
         ],
       ],
-      providerImportSource: "#utils/mdx-components",
+      providerImportSource: "#/utils/mdx-components",
     }),
     tailwindcss(),
   ],
