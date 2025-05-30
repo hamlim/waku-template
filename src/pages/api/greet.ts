@@ -1,4 +1,4 @@
-import { getHonoContext } from "#utils/get-hono-context";
+import { getHonoContext } from "#/utils/get-hono-context";
 
 export default async function handler(_request: Request) {
   let ctx = getHonoContext();
