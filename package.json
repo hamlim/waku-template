@@ -34,6 +34,7 @@
     "@types/node": "22.13.0",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
+    "bun-types": "1.2.15",
     "miniflare": "4.20250410.1",
     "rehype-mdx-code-props": "3.0.1",
     "remark-flexible-markers": "1.2.1",

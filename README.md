@@ -2,9 +2,15 @@
 
 Things to change after using this template:
 
-- `package.json` - `name`
-- `wrangler.jsonc` - `name`
-- title/metadata/etc within the app!
+run `bun ./setup.ts name-of-app`
+
+This will update the following:
+
+- `package.json` `"name"`
+- `wrangler.jsonc` `"name"`
+- `src/pages/_root.tsx` `<title>`
+
+Then finally update this readme with more details!
 
 Get started with:
 
