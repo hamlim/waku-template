@@ -17,7 +17,7 @@
     "react": "experimental",
     "react-dom": "experimental",
     "react-server-dom-webpack": "experimental",
-    "waku": "0.22.4",
+    "waku": "0.23.2",
     "wrangler": "4.18.0"
   },
   "imports": {
