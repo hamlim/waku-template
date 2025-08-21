@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import "../styles.css";
 
 function themeCheck() {
   let prefersDarkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");

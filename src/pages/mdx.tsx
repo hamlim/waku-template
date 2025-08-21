@@ -1,3 +1,4 @@
+import "../styles.css";
 import Component, { frontmatter } from "../mdx/example.mdx";
 
 export default function MDXDemoPage() {

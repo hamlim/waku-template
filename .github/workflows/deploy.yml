@@ -21,4 +21,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           preCommands: bun i && bun run build
-          wranglerVersion: 4.22.0
+          wranglerVersion: 4.32.0
