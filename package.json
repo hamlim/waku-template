@@ -10,7 +10,8 @@
     "predeploy": "bun run build",
     "deploy": "wrangler deploy",
     "format": "biome format --write .",
-    "check": "biome ci ."
+    "check": "biome ci . & bun run knip",
+    "knip": "knip"
   },
   "dependencies": {
     "hono": "4.9.2",
@@ -35,6 +36,7 @@
     "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7",
     "bun-types": "1.2.20",
+    "knip": "5.63.0",
     "miniflare": "4.20250816.1",
     "rehype-mdx-code-props": "3.0.1",
     "remark-flexible-markers": "1.3.0",

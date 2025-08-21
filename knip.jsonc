@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema-jsonc.json",
+  "entry": [
+    "src/pages/**/*.tsx",
+    "src/pages/**/*.ts",
+    "src/pages/**/*.mdx",
+    "src/pages/**/*.md",
+    "src/utils/mdx-components.tsx",
+    "src/pages.gen.ts",
+    "src/styles.css",
+    "waku.config.ts",
+    "waku/*.ts"
+  ],
+  "project": ["src/**/*.tsx", "src/**/*.ts", "src/**/*.css", "waku/*.ts"],
+  "ignoreDependencies": [
+    "@tailwindcss/typography",
+    "tailwindcss",
+    "@mdx-js/mdx"
+  ],
+  "ignore": ["src/utils/get-hono-context.ts"]
+}

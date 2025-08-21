@@ -20,7 +20,7 @@ export default function Root({ children }: { children: ReactNode }) {
       </head>
       <body>
         <script
-          // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: Inject theme handling code early
           dangerouslySetInnerHTML={{ __html: `(${themeCheck.toString()})()` }}
         />
         {children}

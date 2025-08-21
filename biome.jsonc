@@ -26,7 +26,8 @@
         "noUnusedTemplateLiteral": "off"
       },
       "suspicious": {
-        "noExplicitAny": "off"
+        "noExplicitAny": "off",
+        "noUnknownAtRules": "off"
       }
     }
   },
@@ -34,6 +35,9 @@
     {
       "includes": ["worker-configuration.d.ts", "src/pages.gen.ts"],
       "linter": {
+        "enabled": false
+      },
+      "formatter": {
         "enabled": false
       },
       "assist": { "actions": { "source": { "organizeImports": "off" } } }
