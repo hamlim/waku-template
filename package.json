@@ -14,7 +14,7 @@
     "knip": "knip"
   },
   "dependencies": {
-    "hono": "4.9.6",
+    "hono": "4.9.7",
     "react": "0.0.0-experimental-873f7112-20250821",
     "react-dom": "0.0.0-experimental-873f7112-20250821",
     "react-server-dom-webpack": "0.0.0-experimental-873f7112-20250821",
